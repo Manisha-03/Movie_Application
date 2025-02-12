@@ -1,0 +1,25 @@
+<div class="dashboard-container">
+    <!-- Header -->
+    <div class="header">
+      <h2>Admin Dashboard</h2>
+      <div class="user-info">
+        <span>Welcome, User</span>
+        <button class="logout-btn">Logout</button>
+      </div>
+    </div>
+  
+    <div class="main-content">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <ul>
+          <li><a routerLink="/users" routerLinkActive="active">User List</a></li>
+        </ul>
+      </div>
+  
+      <!-- Main Content -->
+      <div class="content">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+  

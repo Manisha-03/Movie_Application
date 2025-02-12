@@ -1,0 +1,76 @@
+.userlist-container {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Adjusting layout for the cards and button */
+.top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Increased card size */
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.card {
+    width: 250px; /* Increased width */
+    height: 150px; /* Increased height */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.active {
+    background: #2ecc71; /* Green */
+}
+
+.inactive {
+    background: #e74c3c; /* Red */
+}
+
+/* Make the button full width */
+.add-user-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    white-space: nowrap; /* Prevents button text from breaking */
+}
+
+.add-user-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Smaller tables */
+.user-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 10px auto; /* Centering */
+    font-size: 14px; /* Making it smaller */
+}
+
+.user-table th, .user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #f4f4f4;
+}

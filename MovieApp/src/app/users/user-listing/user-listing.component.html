@@ -1,0 +1,54 @@
+<div class="userlist-container">
+    <h2>Users</h2>
+
+    <div class="top-container">
+        <div class="card-container">
+            <div class="card active">
+                <h3>Active Users</h3>
+                <p>{{ activeUser.length }}</p>
+            </div>
+
+            <div class="card inactive">
+                <h3>Inactive Users</h3>
+                <p>{{ inactiveUser.length }}</p>
+            </div>
+        </div>
+
+        <!-- Button beside the cards -->
+        <button (click)="goToAddUser()" class="add-user-btn">+ Add User</button>
+    </div>
+
+    <!-- Active Users Table -->
+    <h3>Active Users</h3>
+    <table class="user-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of activeUser">
+                <td>{{ user.firstName }} {{ user.lastName }}</td>
+                <td>{{ user.email }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Inactive Users Table -->
+    <h3>Inactive Users</h3>
+    <table class="user-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of inactiveUser">
+                <td>{{ user.firstName }} {{ user.lastName }}</td>
+                <td>{{ user.email }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

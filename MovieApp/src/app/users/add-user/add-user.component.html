@@ -1,0 +1,182 @@
+<form [formGroup]="customerForm" class="customer-form container">
+  <div class="row">
+    <div class="col-md-3 form-group">
+      <label for="firstName">First Name</label>
+      <input 
+        type="text" 
+        id="firstName"
+        class="form-control" 
+        formControlName="firstName" 
+        placeholder="Enter first name">
+      <div class="error-message" *ngIf="customerForm.get('firstName')?.errors?.['required'] && customerForm.get('firstName')?.touched">
+        First name is required
+      </div>
+    </div>
+
+    <div class="col-md-3 form-group">
+      <label for="lastName">Last Name</label>
+      <input 
+        type="text" 
+        id="lastName"
+        class="form-control" 
+        formControlName="lastName" 
+        placeholder="Enter last name">
+      <div class="error-message" *ngIf="customerForm.get('lastName')?.errors?.['required'] && customerForm.get('lastName')?.touched">
+        Last name is required
+      </div>
+    </div>
+
+    <div class="col-md-3 form-group">
+      <label for="email">Email</label>
+      <input 
+        type="email" 
+        id="email"
+        class="form-control" 
+        formControlName="email" 
+        placeholder="Enter email">
+      <div class="error-message" *ngIf="customerForm.get('email')?.errors?.['required'] && customerForm.get('email')?.touched">
+        Email is required
+      </div>
+      <div class="error-message" *ngIf="customerForm.get('email')?.errors?.['email'] && customerForm.get('email')?.touched">
+        Please enter a valid email address
+      </div>
+    </div>
+
+    <div class="col-md-3 form-group">
+      <label for="phone">Phone</label>
+      <input 
+        type="tel" 
+        id="phone"
+        class="form-control" 
+        formControlName="phone" 
+        placeholder="Enter phone number">
+      <div class="error-message" *ngIf="customerForm.get('phone')?.errors?.['required'] && customerForm.get('phone')?.touched">
+        Phone number is required
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3 form-group">
+      <label for="cityName">City</label>
+      <input 
+        type="text" 
+        id="cityName"
+        class="form-control" 
+        formControlName="cityName" 
+        placeholder="Enter city">
+      <div class="error-message" *ngIf="customerForm.get('cityName')?.errors?.['required'] && customerForm.get('cityName')?.touched">
+        City is required
+      </div>
+    </div>
+
+    <!-- <div class="col-md-3 form-group">
+      <label for="countryId">Country</label>
+      <select 
+        id="countryId"
+        class="form-control" 
+        formControlName="countryId">
+        <option value="">Select a country</option>
+      </select>
+      <div class="error-message" *ngIf="customerForm.get('countryId')?.errors?.['required'] && customerForm.get('countryId')?.touched">
+        Country is required
+      </div>
+    </div> -->
+
+    <div class="col-md-3 form-group">
+      <label for="countryId">Country</label>
+      <select 
+        id="countryId"
+        class="form-control" 
+        formControlName="countryId">
+        <option value="">Select a country</option>
+        <option *ngFor="let country of countryData" [value]="country.countryId">
+          {{ country.country1 }}
+        </option>
+      </select>
+      <div class="error-message" *ngIf="customerForm.get('countryId')?.errors?.['required'] && customerForm.get('countryId')?.touched">
+        Country is required
+      </div>
+    </div>
+    
+    
+    
+
+    <!-- <div class="col-md-3 form-group">
+      <label for="storeId">Store</label>
+      <select 
+        id="storeId"
+        class="form-control" 
+        formControlName="storeId">
+        <option value="">Select a store</option>
+      </select>
+      <div class="error-message" *ngIf="customerForm.get('storeId')?.errors?.['required'] && customerForm.get('storeId')?.touched">
+        Store is required
+      </div>
+    </div> -->
+
+    <div class="col-md-3 form-group">
+      <label for="postalCode">Postal Code</label>
+      <input 
+        type="text" 
+        id="postalCode"
+        class="form-control" 
+        formControlName="postalCode" 
+        placeholder="Enter postal code">
+      <div class="error-message" *ngIf="customerForm.get('postalCode')?.errors?.['required'] && customerForm.get('postalCode')?.touched">
+        Postal code is required
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3 form-group">
+      <label for="address">Address</label>
+      <input 
+        type="text" 
+        id="address"
+        class="form-control" 
+        formControlName="address" 
+        placeholder="Enter address">
+      <div class="error-message" *ngIf="customerForm.get('address')?.errors?.['required'] && customerForm.get('address')?.touched">
+        Address is required
+      </div>
+    </div>
+
+    <div class="col-md-3 form-group">
+      <label for="address2">Address 2</label>
+      <input 
+        type="text" 
+        id="address2"
+        class="form-control" 
+        formControlName="address2" 
+        placeholder="Enter additional address">
+    </div>
+
+    <div class="col-md-3 form-group">
+      <label for="district">District</label>
+      <input 
+        type="text" 
+        id="district"
+        class="form-control" 
+        formControlName="district" 
+        placeholder="Enter district">
+      <div class="error-message" *ngIf="customerForm.get('district')?.errors?.['required'] && customerForm.get('district')?.touched">
+        District is required
+      </div>
+    </div>
+
+    <div class="col-md-3 form-group">
+      <label>
+        <input type="checkbox" formControlName="active">
+        Active
+      </label>
+    </div>
+  </div>
+
+  <div class="form-actions text-center mt-3">
+    <button type="submit" class="btn btn-primary" (click)="onSubmit()" [disabled]="!customerForm.valid">
+      Submit
+    </button>
+  </div>
+</form>
