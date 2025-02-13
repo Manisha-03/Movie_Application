@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "x5FgONaD6rSXF0rC6es50WF4fU8N+fcff9Y5qUUn7UI=",
+  "Source": "MovieApplicationBackend",
+  "BasePath": "_content/MovieApplicationBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

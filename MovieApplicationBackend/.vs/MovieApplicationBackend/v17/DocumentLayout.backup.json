@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DND\\Movie-Application\\MovieApplicationBackend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6DDA6D2B-1C5D-4BE1-99B3-B84FA16777FC}|MovieApplicationBackend\\MovieApplicationBackend.csproj|d:\\dnd\\movie-application\\movieapplicationbackend\\movieapplicationbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6DDA6D2B-1C5D-4BE1-99B3-B84FA16777FC}|MovieApplicationBackend\\MovieApplicationBackend.csproj|solutionrelative:movieapplicationbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\DND\\Movie-Application\\MovieApplicationBackend\\MovieApplicationBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "MovieApplicationBackend\\appsettings.json",
+              "ToolTip": "D:\\DND\\Movie-Application\\MovieApplicationBackend\\MovieApplicationBackend\\appsettings.json",
+              "RelativeToolTip": "MovieApplicationBackend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-12T22:27:00.727Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
